@@ -9,13 +9,12 @@
     },
     "content_scripts": [{
         "js": [
-            "scripts/app.js",
-            ""
+            "scripts/app.js"
         ]
     }],
     "background": {
         "scripts": [
-            "scripts/app.js"
+            "scripts/worker/background.js"
         ]
     }
 }
