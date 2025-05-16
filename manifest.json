@@ -1,10 +1,21 @@
 {
     "name": "Pruuus",
-    "description": "Base Level Extension",
+    "description": "Utilities in forms",
     "version": "1.0",
     "manifest_version": 3,
     "action": {
         "default_popup": "index.html",
         "default_icon": "images/crow.png"
+    },
+    "content_scripts": [{
+        "js": [
+            "scripts/app.js",
+            ""
+        ]
+    }],
+    "background": {
+        "scripts": [
+            "scripts/app.js"
+        ]
     }
 }
