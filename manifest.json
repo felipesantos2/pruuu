@@ -19,17 +19,18 @@
         }
     ],
     "background": {
-        "js": [
+        "service_worker": [
             "scripts/worker/background.js"
         ]
     },
     "permissions": [
-        "notifications"
+        "notifications",
+        "scripting"
     ],
     "icons": {
-        // "16": "images/crow.png",
-        // "32": "images/crow-3.png",
-        "48": "images/crow.png"
-        // "128": "images/crow.png"
+        "16": "images/crow.png",
+        "32": "images/crow.png",
+        "48": "images/crow.png",
+        "128": "images/crow.png"
     }
 }
