@@ -4,31 +4,14 @@
     "version": "1.0",
     "manifest_version": 3,
     "action": {
-        "default_popup": "index.html",
-        "default_icon": "images/crow.png"
-    },
-    "content_scripts": [
-        {
-            "js": [
-                "scripts/app.js"
-            ],
-            "matches": [
-                "<all_urls>"
-            ],
-            "match_origin_as_fallback": true
-        }
-    ],
-    "background": {
-        "service_worker": "scripts/worker/background.js"
+        "default_popup": "popup.html",
+        "default_title": "Pruuu!"
     },
     "permissions": [
         "notifications",
-        "scripting"
-    ],
-    "icons": {
-        "16": "images/crow.png",
-        "32": "images/crow.png",
-        "48": "images/crow.png",
-        "128": "images/crow.png"
-    }
+        "activeTab",
+        "scripting",
+        "storage",
+        "pageCapture"
+    ]
 }
